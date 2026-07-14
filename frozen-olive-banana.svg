@@ -1,0 +1,50 @@
+<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lemon holding frozen olive banana product -->
+  <!-- Lemon body -->
+  <ellipse cx="100" cy="150" rx="50" ry="65" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+  
+  <!-- Lemon top -->
+  <path d="M 100 70 Q 90 90 100 110 Q 110 90 100 70" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+  
+  <!-- Eyes -->
+  <circle cx="85" cy="135" r="5" fill="#000"/>
+  <circle cx="115" cy="135" r="5" fill="#000"/>
+  
+  <!-- Excited smile -->
+  <path d="M 90 160 Q 100 175 110 160" stroke="#000" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Right arm pointing to product -->
+  <rect x="140" y="145" width="40" height="8" fill="#FFD700" stroke="#FFA500" stroke-width="1" rx="4"/>
+  <circle cx="175" cy="149" r="8" fill="#FFD700" stroke="#FFA500" stroke-width="1"/>
+  
+  <!-- Frozen product tablet with olive -->
+  <g transform="translate(210, 80)">
+    <!-- Main rectangle with ice effect -->
+    <rect x="0" y="0" width="70" height="130" fill="#4DD0E1" stroke="#0097A7" stroke-width="3" rx="5"/>
+    
+    <!-- Frosted glass effect -->
+    <rect x="5" y="5" width="60" height="120" fill="#B3E5FC" stroke="#4DD0E1" stroke-width="1" rx="3" opacity="0.7"/>
+    
+    <!-- Ice crystals -->
+    <line x1="15" y1="20" x2="20" y2="15" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
+    <line x1="55" y1="30" x2="60" y2="25" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
+    
+    <!-- Olive (small dark circle inside) -->
+    <circle cx="35" cy="35" r="12" fill="#228B22" stroke="#1a6b1a" stroke-width="1.5"/>
+    <circle cx="35" cy="35" r="10" fill="#32CD32" opacity="0.6"/>
+    <circle cx="32" cy="32" r="3" fill="#ffffff" opacity="0.4"/>
+    
+    <!-- Text -->
+    <text x="35" y="75" font-size="14" font-weight="bold" fill="#00695C" text-anchor="middle" font-family="Arial">FROZEN</text>
+    <text x="35" y="95" font-size="14" font-weight="bold" fill="#00695C" text-anchor="middle" font-family="Arial">OLIVE</text>
+    <text x="35" y="115" font-size="14" font-weight="bold" fill="#00695C" text-anchor="middle" font-family="Arial">BANANA</text>
+  </g>
+  
+  <!-- Legs -->
+  <rect x="90" y="210" width="8" height="50" fill="#FFD700" stroke="#FFA500" stroke-width="1" rx="4"/>
+  <rect x="102" y="210" width="8" height="50" fill="#FFD700" stroke="#FFA500" stroke-width="1" rx="4"/>
+  
+  <!-- Shoes -->
+  <ellipse cx="94" cy="265" rx="8" ry="6" fill="#333"/>
+  <ellipse cx="106" cy="265" rx="8" ry="6" fill="#333"/>
+</svg>

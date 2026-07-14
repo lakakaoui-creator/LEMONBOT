@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEMONFARMZ - Savourer le vrais prix des bonne chose</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="lemon-logo.svg" alt="LEMONFARMZ Logo" class="logo-img">
+                <span class="logo-text">LEMONFARMZ</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#game">Jeu</a></li>
+                <li><a href="#avis">Avis</a></li>
+                <li><a href="#contact" class="btn-contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>LEMONFARMZ</h1>
+            <p class="tagline">Savourer le vrais prix des bonne chose🍫❄</p>
+            <img src="lemon-hero.svg" alt="Lemon Warrior" class="hero-image">
+            <a href="#menu" class="btn-cta">Découvrir le Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Notre Menu</h2>
+        <div class="menu-grid">
+            <!-- Jaune Mousseux -->
+            <div class="menu-item">
+                <div class="product-image">
+                    <img src="jaune-mousseux.svg" alt="Jaune Mousseux" class="product-img">
+                </div>
+                <div class="menu-info">
+                    <h3>🍋 Jaune Mousseux</h3>
+                    <div class="price-grid">
+                        <div class="price-item">
+                            <span class="size">4g</span>
+                            <span class="price">20€</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="size">12g</span>
+                            <span class="price">50€</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="size">25g</span>
+                            <span class="price">100€</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="size">100g</span>
+                            <span class="price">300€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frozen Olive Banana -->
+            <div class="menu-item">
+                <div class="product-image">
+                    <img src="frozen-olive-banana.svg" alt="Frozen Olive Banana" class="product-img">
+                </div>
+                <div class="menu-info">
+                    <h3>❄ Frozen Olive Banana</h3>
+                    <div class="price-grid">
+                        <div class="price-item">
+                            <span class="size">5g</span>
+                            <span class="price">70€</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="size">10g</span>
+                            <span class="price">120€</span>
+                        </div>
+                    </div>
+                    <p class="note">Plus en privé</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <h2>Nos Produits en Détail</h2>
+        <div class="products-container">
+            <div class="product-card">
+                <img src="lemon-with-yellow.svg" alt="Lemon Mousseux" class="card-image">
+                <h3>Jaune Mousseux</h3>
+                <p>Le classique qui fait sensation. Qualité premium, effet immédiat garantit.</p>
+            </div>
+            <div class="product-card">
+                <img src="lemon-with-olive.svg" alt="Frozen Olive Banana" class="card-image">
+                <h3>Frozen Olive Banana</h3>
+                <p>Un mélange glacé unique. Sensation extrême et saveur incomparable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game" class="game-section">
+        <div class="container">
+            <h2>🎮 LEMONFARMZ SNAKE 🎮</h2>
+            <p class="game-subtitle">Contrôle le serpent, mange les citrons et les pochons!</p>
+            
+            <div class="game-wrapper">
+                <div class="game-info">
+                    <div class="game-stats">
+                        <div class="stat">
+                            <span class="stat-label">Score:</span>
+                            <span class="stat-value" id="score">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Niveau:</span>
+                            <span class="stat-value" id="level">1</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Vitesse:</span>
+                            <span class="stat-value" id="speed">100ms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <canvas id="gameCanvas" width="500" height="500"></canvas>
+
+                <div class="game-controls">
+                    <button id="startBtn" class="btn-game">▶ Démarrer</button>
+                    <button id="pauseBtn" class="btn-game">⏸ Pause</button>
+                    <button id="resetBtn" class="btn-game">↻ Réinitialiser</button>
+                </div>
+
+                <div class="game-instructions">
+                    <h3>📖 Instructions:</h3>
+                    <ul>
+                        <li>🍋 Mange les <strong>citrons</strong> (+10 points)</li>
+                        <li>💚 Mange les <strong>pochons</strong> verts (+50 points & boost vitesse)</li>
+                        <li>⬆️⬇️⬅️➡️ Utilise les <strong>flèches</strong> pour diriger</li>
+                        <li>⚠️ Évite les <strong>murs</strong> et ton propre corps</li>
+                        <li>🚀 Plus tu manges, plus tu vas vite!</li>
+                    </ul>
+                </div>
+
+                <div class="game-legend">
+                    <div class="legend-item">
+                        <div class="legend-box citron-box">🍋</div>
+                        <span>Citron = +10 pts</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-box pochon-box">💚</div>
+                        <span>Pochon = +50 pts</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-box serpent-box"></div>
+                        <span>Ton Serpent</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gameOver" class="game-over-modal" style="display: none;">
+                <div class="game-over-content">
+                    <h2>GAME OVER! 💀</h2>
+                    <p class="final-score">Score Final: <span id="finalScore">0</span></p>
+                    <p class="final-level">Niveau Atteint: <span id="finalLevel">1</span></p>
+                    <button class="btn-cta" onclick="location.reload()">Rejouer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="avis" class="reviews-section">
+        <h2>Avis de nos Clients</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"La meilleure qualité que j'ai jamais essayée. LEMONFARMZ c'est du sérieux!"</p>
+                <p class="reviewer-name">- Marc D.</p>
+            </div>
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"Service rapide, discrétion garantie. Vraiment satisfait. Je recommande vivement."</p>
+                <p class="reviewer-name">- Sophie L.</p>
+            </div>
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"Wow! Les effets sont exactement comme promis. Le Frozen Olive Banana est incroyable!"</p>
+                <p class="reviewer-name">- Thomas R.</p>
+            </div>
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"J'achète régulièrement, jamais déçu. Les prix sont justes pour cette qualité. Merci LEMONFARMZ!"</p>
+                <p class="reviewer-name">- Alexandra M.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Nous Contacter</h2>
+        <p>Pour plus d'informations ou pour passer commande</p>
+        <div class="contact-buttons">
+            <a href="https://discord.com" class="btn-contact-primary">Discord</a>
+            <a href="https://telegram.org" class="btn-contact-primary">Telegram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 LEMONFARMZ - Savourer le vrais prix des bonne chose 🍫❄</p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>

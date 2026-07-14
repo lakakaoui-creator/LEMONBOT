@@ -1,0 +1,52 @@
+<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lemon body -->
+  <ellipse cx="150" cy="200" rx="80" ry="100" fill="#FFD700" stroke="#FFA500" stroke-width="3"/>
+  
+  <!-- Lemon top point -->
+  <path d="M 150 80 Q 140 110 150 140 Q 160 110 150 80" fill="#FFD700" stroke="#FFA500" stroke-width="3"/>
+  
+  <!-- Eyes -->
+  <circle cx="130" cy="180" r="8" fill="#000000"/>
+  <circle cx="170" cy="180" r="8" fill="#000000"/>
+  <circle cx="132" cy="178" r="3" fill="#ffffff"/>
+  <circle cx="172" cy="178" r="3" fill="#ffffff"/>
+  
+  <!-- Eyebrows -->
+  <path d="M 120 165 Q 130 160 140 165" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 160 165 Q 170 160 180 165" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Smile -->
+  <path d="M 130 220 Q 150 240 170 220" stroke="#000000" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Left arm with Kalashnikov -->
+  <circle cx="80" cy="200" r="12" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+  <rect x="55" y="195" width="30" height="10" fill="#8B4513" stroke="#654321" stroke-width="1" rx="2"/>
+  
+  <!-- Kalashnikov gun -->
+  <g transform="translate(40, 190)">
+    <!-- Barrel -->
+    <rect x="0" y="0" width="40" height="4" fill="#333333" stroke="#000" stroke-width="1" rx="2"/>
+    <!-- Stock -->
+    <path d="M 38 2 L 50 -5 L 50 7 Z" fill="#8B4513" stroke="#654321" stroke-width="1"/>
+    <!-- Trigger guard -->
+    <path d="M 25 4 Q 22 8 20 4" stroke="#333333" stroke-width="2" fill="none"/>
+    <!-- Muzzle brake -->
+    <rect x="-5" y="-2" width="8" height="8" fill="#555555" stroke="#000" stroke-width="1"/>
+  </g>
+  
+  <!-- Right arm -->
+  <circle cx="220" cy="200" r="12" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+  <rect x="225" y="195" width="30" height="10" fill="#8B4513" stroke="#654321" stroke-width="1" rx="2"/>
+  
+  <!-- Legs -->
+  <rect x="135" y="300" width="12" height="60" fill="#FFD700" stroke="#FFA500" stroke-width="2" rx="6"/>
+  <rect x="153" y="300" width="12" height="60" fill="#FFD700" stroke="#FFA500" stroke-width="2" rx="6"/>
+  
+  <!-- Shoes -->
+  <ellipse cx="141" cy="365" rx="10" ry="8" fill="#333333" stroke="#000" stroke-width="1"/>
+  <ellipse cx="159" cy="365" rx="10" ry="8" fill="#333333" stroke="#000" stroke-width="1"/>
+  
+  <!-- Leaf -->
+  <ellipse cx="200" cy="100" rx="20" ry="35" fill="#32CD32" stroke="#228B22" stroke-width="2" transform="rotate(-45 200 100)"/>
+  <path d="M 200 75 Q 210 100 200 125" stroke="#228B22" stroke-width="1.5" fill="none"/>
+</svg>
