@@ -1,0 +1,26 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lemon body -->
+  <ellipse cx="50" cy="55" rx="35" ry="38" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+  
+  <!-- Lemon top point -->
+  <path d="M 50 15 Q 45 25 50 35 Q 55 25 50 15" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+  
+  <!-- Eyes -->
+  <circle cx="40" cy="50" r="4" fill="#000000"/>
+  <circle cx="60" cy="50" r="4" fill="#000000"/>
+  
+  <!-- Smile -->
+  <path d="M 40 65 Q 50 70 60 65" stroke="#000000" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Left arm with Kalashnikov -->
+  <circle cx="20" cy="55" r="6" fill="#FFD700" stroke="#FFA500" stroke-width="1"/>
+  <line x1="20" y1="55" x2="10" y2="55" stroke="#FFA500" stroke-width="3"/>
+  <rect x="5" y="52" width="8" height="6" fill="#333333" stroke="#000" stroke-width="1"/>
+  
+  <!-- Right arm -->
+  <circle cx="80" cy="55" r="6" fill="#FFD700" stroke="#FFA500" stroke-width="1"/>
+  <line x1="80" y1="55" x2="90" y2="55" stroke="#FFA500" stroke-width="3"/>
+  
+  <!-- Leaf -->
+  <ellipse cx="65" cy="25" rx="8" ry="12" fill="#32CD32" stroke="#228B22" stroke-width="1" transform="rotate(45 65 25)"/>
+</svg>
