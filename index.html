@@ -3,221 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEMONFARMZ - Savourer le vrais prix des bonne chose</title>
+    <title>LEMONFARMZ - King of Lemons 🍋</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <img src="lemon-logo.svg" alt="LEMONFARMZ Logo" class="logo-img">
-                <span class="logo-text">LEMONFARMZ</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#products">Produits</a></li>
-                <li><a href="#game">Jeu</a></li>
-                <li><a href="#avis">Avis</a></li>
-                <li><a href="#contact" class="btn-contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
+            <img src="lemon-logo.svg" alt="LEMONFARMZ Logo" class="hero-logo">
             <h1>LEMONFARMZ</h1>
-            <p class="tagline">Savourer le vrais prix des bonne chose🍫❄</p>
+            <p class="hero-subtitle">King of Lemons 🍋 Hollywood</p>
             <img src="lemon-hero.svg" alt="Lemon Warrior" class="hero-image">
-            <a href="#menu" class="btn-cta">Découvrir le Menu</a>
+            <p class="welcome-text">Bienvenue chez Lemonfarmz 🍋</p>
+            <p class="welcome-desc">Clique juste en dessous pour ouvrir notre mini-app et découvrir tous nos produits, nos menus, et surtout nos nouveaux arrivages chaque semaine</p>
+            <p class="gift-text">🎁 Toute vos commande sont livrer avec un cadeau 🎁</p>
+            <p class="delivery-text">🚚 Livraison de 13h à 00h 🚚</p>
+            <p class="meetup-text">📍 Meet up de 12h à 00h 📍</p>
+            <p class="shipping-text">📦 envoie dans toute l'Europe 📦</p>
+            <p class="team-text">La Team Lemonfarmz 😇</p>
         </div>
     </section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="menu-section">
-        <h2>Notre Menu</h2>
-        <div class="menu-grid">
-            <!-- Jaune Mousseux -->
-            <div class="menu-item">
-                <div class="product-image">
-                    <img src="jaune-mousseux.svg" alt="Jaune Mousseux" class="product-img">
+    <!-- Welcome Card -->
+    <section class="welcome-card-section">
+        <div class="welcome-card">
+            <div class="welcome-header">
+                <div class="welcome-icon">👋</div>
+                <span class="welcome-code">#31#</span>
+                <div class="welcome-star">✨</div>
+            </div>
+            <p class="gift-message">Chaque commande livrée avec un cadeau 🎁</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Accueil Section -->
+        <section id="accueil" class="section accueil-section active">
+            <h2>ACCUEIL</h2>
+            <div class="intro-content">
+                <p>Bienvenue sur LEMONFARMZ</p>
+                <p>Savoure le vrai prix des bonnes choses 🍋❄️</p>
+            </div>
+        </section>
+
+        <!-- Arcade/Game Section -->
+        <section id="arcade" class="section arcade-section">
+            <h2>ARCADE</h2>
+            <div class="game-card">
+                <h3>🎮 LEMONFARMZ SNAKE 🎮</h3>
+                <div class="game-info">
+                    <div class="score-display">
+                        <span>Score: <strong id="score">0</strong></span>
+                        <span>Level: <strong id="level">1</strong></span>
+                    </div>
                 </div>
-                <div class="menu-info">
-                    <h3>🍋 Jaune Mousseux</h3>
-                    <div class="price-grid">
-                        <div class="price-item">
+                <canvas id="gameCanvas" width="400" height="400"></canvas>
+                <div class="game-controls">
+                    <button id="startBtn" class="btn-game">▶ Jouer</button>
+                    <button id="pauseBtn" class="btn-game">⏸ Pause</button>
+                    <button id="resetBtn" class="btn-game">↻ Reset</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="produits" class="section products-section">
+            <div class="products-header">
+                <h2>PRODUITS</h2>
+                <span class="product-count">2 produits</span>
+            </div>
+            <div class="filter-bar">
+                <button class="filter-btn active">🍋 Tous</button>
+                <select class="filter-dropdown">
+                    <option>Catégories</option>
+                </select>
+                <select class="filter-dropdown">
+                    <option>Farms</option>
+                </select>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="jaune-mousseux.svg" alt="Jaune Mousseux">
+                    </div>
+                    <h3>Jaune Mousseux</h3>
+                    <p class="product-farm">LEMONFARMZ 🍋</p>
+                    <div class="product-prices">
+                        <div class="price-option">
                             <span class="size">4g</span>
                             <span class="price">20€</span>
                         </div>
-                        <div class="price-item">
+                        <div class="price-option">
                             <span class="size">12g</span>
                             <span class="price">50€</span>
                         </div>
-                        <div class="price-item">
+                        <div class="price-option">
                             <span class="size">25g</span>
                             <span class="price">100€</span>
                         </div>
-                        <div class="price-item">
+                        <div class="price-option">
                             <span class="size">100g</span>
                             <span class="price">300€</span>
                         </div>
                     </div>
+                    <button class="btn-add">🛒 Ajouter</button>
                 </div>
-            </div>
 
-            <!-- Frozen Olive Banana -->
-            <div class="menu-item">
-                <div class="product-image">
-                    <img src="frozen-olive-banana.svg" alt="Frozen Olive Banana" class="product-img">
-                </div>
-                <div class="menu-info">
-                    <h3>❄ Frozen Olive Banana</h3>
-                    <div class="price-grid">
-                        <div class="price-item">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="frozen-olive-banana.svg" alt="Frozen Olive Banana">
+                    </div>
+                    <h3>Frozen Olive Banana</h3>
+                    <p class="product-farm">LEMONFARMZ ❄️</p>
+                    <div class="product-prices">
+                        <div class="price-option">
                             <span class="size">5g</span>
                             <span class="price">70€</span>
                         </div>
-                        <div class="price-item">
+                        <div class="price-option">
                             <span class="size">10g</span>
                             <span class="price">120€</span>
                         </div>
                     </div>
-                    <p class="note">Plus en privé</p>
+                    <button class="btn-add">🛒 Ajouter</button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Products Section -->
-    <section id="products" class="products-section">
-        <h2>Nos Produits en Détail</h2>
-        <div class="products-container">
-            <div class="product-card">
-                <img src="lemon-with-yellow.svg" alt="Lemon Mousseux" class="card-image">
-                <h3>Jaune Mousseux</h3>
-                <p>Le classique qui fait sensation. Qualité premium, effet immédiat garantit.</p>
-            </div>
-            <div class="product-card">
-                <img src="lemon-with-olive.svg" alt="Frozen Olive Banana" class="card-image">
-                <h3>Frozen Olive Banana</h3>
-                <p>Un mélange glacé unique. Sensation extrême et saveur incomparable.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Game Section -->
-    <section id="game" class="game-section">
-        <div class="container">
-            <h2>🎮 LEMONFARMZ SNAKE 🎮</h2>
-            <p class="game-subtitle">Contrôle le serpent, mange les citrons et les pochons!</p>
-            
-            <div class="game-wrapper">
-                <div class="game-info">
-                    <div class="game-stats">
-                        <div class="stat">
-                            <span class="stat-label">Score:</span>
-                            <span class="stat-value" id="score">0</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-label">Niveau:</span>
-                            <span class="stat-value" id="level">1</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-label">Vitesse:</span>
-                            <span class="stat-value" id="speed">100ms</span>
-                        </div>
-                    </div>
+        <!-- Reviews Section -->
+        <section id="avis" class="section reviews-section">
+            <h2>AVIS CLIENTS</h2>
+            <div class="rating-summary">
+                <div class="rating-score">
+                    <span class="big-score">5.0</span>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="rating-count">9 avis</p>
                 </div>
-
-                <canvas id="gameCanvas" width="500" height="500"></canvas>
-
-                <div class="game-controls">
-                    <button id="startBtn" class="btn-game">▶ Démarrer</button>
-                    <button id="pauseBtn" class="btn-game">⏸ Pause</button>
-                    <button id="resetBtn" class="btn-game">↻ Réinitialiser</button>
-                </div>
-
-                <div class="game-instructions">
-                    <h3>📖 Instructions:</h3>
-                    <ul>
-                        <li>🍋 Mange les <strong>citrons</strong> (+10 points)</li>
-                        <li>💚 Mange les <strong>pochons</strong> verts (+50 points & boost vitesse)</li>
-                        <li>⬆️⬇️⬅️➡️ Utilise les <strong>flèches</strong> pour diriger</li>
-                        <li>⚠️ Évite les <strong>murs</strong> et ton propre corps</li>
-                        <li>🚀 Plus tu manges, plus tu vas vite!</li>
-                    </ul>
-                </div>
-
-                <div class="game-legend">
-                    <div class="legend-item">
-                        <div class="legend-box citron-box">🍋</div>
-                        <span>Citron = +10 pts</span>
+                <div class="rating-bars">
+                    <div class="bar-row">
+                        <span>5</span>
+                        <div class="bar"><div class="bar-fill" style="width: 100%"></div></div>
+                        <span>9</span>
                     </div>
-                    <div class="legend-item">
-                        <div class="legend-box pochon-box">💚</div>
-                        <span>Pochon = +50 pts</span>
+                    <div class="bar-row">
+                        <span>4</span>
+                        <div class="bar"><div class="bar-fill" style="width: 0%"></div></div>
+                        <span>0</span>
                     </div>
-                    <div class="legend-item">
-                        <div class="legend-box serpent-box"></div>
-                        <span>Ton Serpent</span>
+                    <div class="bar-row">
+                        <span>3</span>
+                        <div class="bar"><div class="bar-fill" style="width: 0%"></div></div>
+                        <span>0</span>
+                    </div>
+                    <div class="bar-row">
+                        <span>2</span>
+                        <div class="bar"><div class="bar-fill" style="width: 0%"></div></div>
+                        <span>0</span>
+                    </div>
+                    <div class="bar-row">
+                        <span>1</span>
+                        <div class="bar"><div class="bar-fill" style="width: 0%"></div></div>
+                        <span>0</span>
                     </div>
                 </div>
             </div>
 
-            <div id="gameOver" class="game-over-modal" style="display: none;">
-                <div class="game-over-content">
-                    <h2>GAME OVER! 💀</h2>
-                    <p class="final-score">Score Final: <span id="finalScore">0</span></p>
-                    <p class="final-level">Niveau Atteint: <span id="finalLevel">1</span></p>
-                    <button class="btn-cta" onclick="location.reload()">Rejouer</button>
+            <div class="leave-review">
+                <h3>LAISSER UN AVIS</h3>
+                <div class="star-selector">
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                </div>
+                <textarea placeholder="Partagez votre expérience..."></textarea>
+                <button class="btn-submit-review">Publier l'avis</button>
+            </div>
+
+            <div class="reviews-list">
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-avatar">M</div>
+                        <span class="review-name">Marc D.</span>
+                        <span class="review-date">Récemment</span>
+                    </div>
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"La meilleure qualité que j'ai jamais essayée. LEMONFARMZ c'est du sérieux!"</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-avatar">S</div>
+                        <span class="review-name">Sophie L.</span>
+                        <span class="review-date">Récemment</span>
+                    </div>
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Service rapide, discrétion garantie. Vraiment satisfait. Je recommande vivement."</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-avatar">T</div>
+                        <span class="review-name">Thomas R.</span>
+                        <span class="review-date">Récemment</span>
+                    </div>
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Wow! Les effets sont exactement comme promis. Le Frozen Olive Banana est incroyable!"</p>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-avatar">A</div>
+                        <span class="review-name">Alexandra M.</span>
+                        <span class="review-date">Récemment</span>
+                    </div>
+                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"J'achète régulièrement, jamais déçu. Les prix sont justes pour cette qualité. Merci LEMONFARMZ!"</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Reviews Section -->
-    <section id="avis" class="reviews-section">
-        <h2>Avis de nos Clients</h2>
-        <div class="reviews-container">
-            <div class="review-card">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"La meilleure qualité que j'ai jamais essayée. LEMONFARMZ c'est du sérieux!"</p>
-                <p class="reviewer-name">- Marc D.</p>
+        <!-- Infos Section -->
+        <section id="infos" class="section infos-section">
+            <h2>INFORMATIONS</h2>
+            <div class="info-item">
+                <div class="info-icon">🕐</div>
+                <h3>Horaire de livraison</h3>
+                <p>Ouvert de 13h à 00h</p>
             </div>
-            <div class="review-card">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"Service rapide, discrétion garantie. Vraiment satisfait. Je recommande vivement."</p>
-                <p class="reviewer-name">- Sophie L.</p>
+            <div class="info-item">
+                <div class="info-icon">📍</div>
+                <h3>Meet up</h3>
+                <p>De 12h à 00h</p>
             </div>
-            <div class="review-card">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"Wow! Les effets sont exactement comme promis. Le Frozen Olive Banana est incroyable!"</p>
-                <p class="reviewer-name">- Thomas R.</p>
+            <div class="info-item">
+                <div class="info-icon">📦</div>
+                <h3>Livraison</h3>
+                <p>Partout en Europe</p>
             </div>
-            <div class="review-card">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
-                <p class="review-text">"J'achète régulièrement, jamais déçu. Les prix sont justes pour cette qualité. Merci LEMONFARMZ!"</p>
-                <p class="reviewer-name">- Alexandra M.</p>
+            <div class="info-item">
+                <div class="info-icon">🎁</div>
+                <h3>Cadeaux</h3>
+                <p>Chaque commande avec cadeau</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Nous Contacter</h2>
-        <p>Pour plus d'informations ou pour passer commande</p>
-        <div class="contact-buttons">
-            <a href="https://discord.com" class="btn-contact-primary">Discord</a>
-            <a href="https://telegram.org" class="btn-contact-primary">Telegram</a>
-        </div>
-    </section>
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h2>NOUS CONTACTER</h2>
+            <p class="contact-subtitle">Choisissez votre forme préférée</p>
+            <div class="contact-buttons">
+                <div class="contact-btn">
+                    <div class="contact-icon">📷</div>
+                    <h3>Instagram</h3>
+                    <p>Rejoignez notre insta</p>
+                </div>
+                <div class="contact-btn">
+                    <div class="contact-icon">🥔</div>
+                    <h3>Potato</h3>
+                    <p>Rejoignez notre potato</p>
+                </div>
+                <div class="contact-btn">
+                    <div class="contact-icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <p>Notre whatsapp</p>
+                </div>
+                <div class="contact-btn">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Canal telegram</h3>
+                    <p>Notre canal telegram</p>
+                </div>
+                <div class="contact-btn">
+                    <div class="contact-icon">📨</div>
+                    <h3>Canal secour</h3>
+                    <p>Canal secour</p>
+                </div>
+                <div class="contact-btn">
+                    <div class="contact-icon">✈️</div>
+                    <h3>Groupe telegram</h3>
+                    <p>Chat telegram</p>
+                </div>
+            </div>
+        </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 LEMONFARMZ - Savourer le vrais prix des bonne chose 🍫❄</p>
-    </footer>
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <button class="nav-btn active" data-section="accueil">🏠 ACCUEIL</button>
+        <button class="nav-btn" data-section="arcade">⭐ ARCADE</button>
+        <button class="nav-btn" data-section="produits">🛒 PANIER</button>
+        <button class="nav-btn" data-section="infos">ℹ️ INFOS</button>
+        <button class="nav-btn" data-section="contact">✉️ CONTACT</button>
+    </nav>
 
     <script src="game.js"></script>
+    <script>
+        // Navigation
+        const navBtns = document.querySelectorAll('.nav-btn');
+        const sections = document.querySelectorAll('.section');
+
+        navBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const sectionId = btn.dataset.section;
+                
+                navBtns.forEach(b => b.classList.remove('active'));
+                sections.forEach(s => s.classList.remove('active'));
+                
+                btn.classList.add('active');
+                document.getElementById(sectionId).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
