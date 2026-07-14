@@ -17,6 +17,7 @@
             <ul class="nav-links">
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#products">Produits</a></li>
+                <li><a href="#game">Jeu</a></li>
                 <li><a href="#avis">Avis</a></li>
                 <li><a href="#contact" class="btn-contact">Contact</a></li>
             </ul>
@@ -105,6 +106,76 @@
         </div>
     </section>
 
+    <!-- Game Section -->
+    <section id="game" class="game-section">
+        <div class="container">
+            <h2>🎮 LEMONFARMZ SNAKE 🎮</h2>
+            <p class="game-subtitle">Contrôle le serpent, mange les citrons et les pochons!</p>
+            
+            <div class="game-wrapper">
+                <div class="game-info">
+                    <div class="game-stats">
+                        <div class="stat">
+                            <span class="stat-label">Score:</span>
+                            <span class="stat-value" id="score">0</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Niveau:</span>
+                            <span class="stat-value" id="level">1</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Vitesse:</span>
+                            <span class="stat-value" id="speed">100ms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <canvas id="gameCanvas" width="500" height="500"></canvas>
+
+                <div class="game-controls">
+                    <button id="startBtn" class="btn-game">▶ Démarrer</button>
+                    <button id="pauseBtn" class="btn-game">⏸ Pause</button>
+                    <button id="resetBtn" class="btn-game">↻ Réinitialiser</button>
+                </div>
+
+                <div class="game-instructions">
+                    <h3>📖 Instructions:</h3>
+                    <ul>
+                        <li>🍋 Mange les <strong>citrons</strong> (+10 points)</li>
+                        <li>💚 Mange les <strong>pochons</strong> verts (+50 points & boost vitesse)</li>
+                        <li>⬆️⬇️⬅️➡️ Utilise les <strong>flèches</strong> pour diriger</li>
+                        <li>⚠️ Évite les <strong>murs</strong> et ton propre corps</li>
+                        <li>🚀 Plus tu manges, plus tu vas vite!</li>
+                    </ul>
+                </div>
+
+                <div class="game-legend">
+                    <div class="legend-item">
+                        <div class="legend-box citron-box">🍋</div>
+                        <span>Citron = +10 pts</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-box pochon-box">💚</div>
+                        <span>Pochon = +50 pts</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-box serpent-box"></div>
+                        <span>Ton Serpent</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gameOver" class="game-over-modal" style="display: none;">
+                <div class="game-over-content">
+                    <h2>GAME OVER! 💀</h2>
+                    <p class="final-score">Score Final: <span id="finalScore">0</span></p>
+                    <p class="final-level">Niveau Atteint: <span id="finalLevel">1</span></p>
+                    <button class="btn-cta" onclick="location.reload()">Rejouer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Reviews Section -->
     <section id="avis" class="reviews-section">
         <h2>Avis de nos Clients</h2>
@@ -146,5 +217,7 @@
     <footer class="footer">
         <p>&copy; 2024 LEMONFARMZ - Savourer le vrais prix des bonne chose 🍫❄</p>
     </footer>
+
+    <script src="game.js"></script>
 </body>
 </html>
